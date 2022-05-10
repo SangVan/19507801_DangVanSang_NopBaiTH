@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutICourseItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6FBDA1"
+    tools:context=".CourseAdapter">
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:background="@drawable/group_4"
+        android:text="U"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSua"
+        app:layout_constraintTop_toTopOf="@+id/btnSua" />
+
+    <TextView
+        android:id="@+id/txtCourse"
+        android:layout_width="226dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="40dp"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp"
+        android:text="Java"
+        android:textColor="#090808"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/vector"
+        android:text="U"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCourse"
+        app:layout_constraintStart_toEndOf="@+id/txtCourse"
+        app:layout_constraintTop_toTopOf="@+id/txtCourse"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
